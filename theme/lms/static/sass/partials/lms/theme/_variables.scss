@@ -1,9 +1,15 @@
-$primary: {{ INDIGO_PRIMARY_COLOR }};
+$main-color: #0790f6;
+$main-color-darker: darken( $main-color, 10%);
+$main-color-lighter: lighten( $main-color, 10% );
 
-// Theme fonts
-$font-family-title: Plex;
-$serif: Crimson;
-$f-sans-serif: Crimson, 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary: $main-color;
 
-// Initialize the Open edX Bootstrap theme
+$action-primary-bg: $main-color;
+$action-primary-shadow: $main-color-darker;
+$action-primary-focused-bg: $main-color-lighter;
+$action-primary-active-bg: $main-color;
+$header-border-color: $main-color;
+
+$link-color: #0790f6;
+
 @import 'edx-bootstrap/sass/open-edx/theme';
